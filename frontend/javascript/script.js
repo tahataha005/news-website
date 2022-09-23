@@ -2,6 +2,8 @@ $(document).ready(function(){
 
         $.getJSON("http://localhost/news-website/backend/get_new.php",function(data){
             console.log(data)
+        })
+    })
             for(let i =0;i<data.length;i++){
                 console.log(i)
                 $("#newsContainer").append(`<div class="card">
@@ -21,4 +23,4 @@ $(document).ready(function(){
             });
 
         })
-    
+   
